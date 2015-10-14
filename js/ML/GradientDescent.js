@@ -1,0 +1,1 @@
+console.log(numeric.add([7,8,9],[10,1,2]));
