@@ -14,8 +14,6 @@
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.css">
 
-        <script src="js/ML/numeric-1.2.6.min.js"></script>
-        <script src="js/ML/GradientDescent.js"></script>
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
     <body>
@@ -25,7 +23,8 @@
 
         <div class="header-container">
             <header class="wrapper clearfix">
-                <h1 class="title">Machine Learning</h1>
+                <div class="title"><img src="img/logo.png" alt="MSense"/></div>
+
                 <nav>
                     <ul>
                         <li><a href="#">Home</a></li>
@@ -41,17 +40,18 @@
 
                 <article>
                     <header>
-                        <h1>article header h1</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec.</p>
+                        <h1>Gradient Descent Algorithm</h1>
+                        <p>Gradient descent is a first-order optimization algorithm. To find a local minimum of a function using gradient descent, one takes steps proportional to the negative of the gradient (or of the approximate gradient) of the function at the current point. If instead one takes steps proportional to the positive of the gradient, one approaches a local maximum of that function; the procedure is then known as gradient ascent.</p>
                     </header>
+
                     <section>
-                        <h2>article section h2</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Proin in est sed erat facilisis pharetra.</p>
+                        <h3>Choosing Data</h3>
+                        I suggest to use data from Andrew Ng's course assignment link:
+                       <input type="file" id="csv-file" name="files" class="peter-river-flat-button"/>
+                       <button id="btn-calculate">Start!</button>
                     </section>
-                    <section>
-                        <h2>article section h2</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Proin in est sed erat facilisis pharetra.</p>
-                    </section>
+                  
+
                     <footer>
                         <h3>article footer h3</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor.</p>
@@ -74,6 +74,11 @@
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+        <script src="js/vendor/papaparse.min.js"></script>
+        <script src="js/ML/numeric-1.2.6.min.js"></script>
+        <script src="js/ML/GradientDescent.js"></script>
+ 
 
         <script src="js/main.js"></script>
 
