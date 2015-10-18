@@ -13,8 +13,11 @@
 
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.css">
-
+        <link rel="stylesheet" href="bower_components/chartist/dist/chartist.min.css">
+       
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -46,15 +49,18 @@
 
                     <section>
                         <h3>Choosing Data</h3>
-                        I suggest to use data from Andrew Ng's course assignment link:
+                        <p> Now we should load input data for out machine learning algorithm. I suggest to use <a href="data/ex1data1.csv">data</a> from Andrew Ng's course assignment. Note: first row of data should be a title. After loading data press start button to run algo. 
+                        </p>
                        <input type="file" id="csv-file" name="files" class="peter-river-flat-button"/>
                        <button id="btn-calculate">Start!</button>
                     </section>
                   
 
                     <footer>
-                        <h3>article footer h3</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor.</p>
+                        <h3>Input data chart:</h3>
+                 
+                    <div id="chart_div"></div>
+
                     </footer>
                 </article>
 
@@ -74,7 +80,9 @@
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        
 
+   <script src="bower_components/chartist/dist/chartist.min.js"></script>
         <script src="js/vendor/papaparse.min.js"></script>
         <script src="js/ML/numeric-1.2.6.min.js"></script>
         <script src="js/ML/GradientDescent.js"></script>
